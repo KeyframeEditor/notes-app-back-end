@@ -1,8 +1,10 @@
+// Berkas Routes
+
 const {
   addNoteHandler,
   getAllNotesHandler,
-  getNoteByIdHandler,
-  editNoteByIdHandler,
+  getNotebyIdHandler,
+  editNotebyIdHandler,
   deleteNoteByIdHandler,
 } = require('./handler');
 
@@ -20,18 +22,18 @@ const routes = [
   {
     method: 'GET',
     path: '/notes/{id}',
-    handler: getNoteByIdHandler,
+    handler: getNotebyIdHandler,
   },
   {
     method: 'PUT',
     path: '/notes/{id}',
-    handler: editNoteByIdHandler,
+    handler: editNotebyIdHandler,
   },
   {
     method: 'DELETE',
     path: '/notes/{id}',
     handler: deleteNoteByIdHandler,
   },
-]
+];
 
-module.exports = routes
+module.exports = routes;
